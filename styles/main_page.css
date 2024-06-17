@@ -41,8 +41,6 @@ body .nav-design .logo {
 body .nav-design .nav-rightside {
   width: 120px;
   height: 50px;
-  border: 1px solid black;
-  border-radius: 30%;
   display: flex;
 }
 
