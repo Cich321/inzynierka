@@ -2,28 +2,59 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="/styles/main_page.css" />
-		<title>Document</title>
+		<title>NAZWA STRONY</title>
 	</head>
 	<body>
-		<nav class="nav-design">
-			<div class="container nav-elements-placement">
-				<div class="logo">img</div>
-				<div class="new-offer"><i class="fa-solid fa-plus"></i>Dodaj Ogłoszenie</div>
-				<div class="nav-rightside">
-					<div class="nav-rightside-elements"><i class="fa-solid fa-bell"></i></div>
-					<div class="nav-rightside-elements"><i class="fa-solid fa-house-user"></i></div>
+		<nav class="nav-design d-flex">
+			<div class="margins d-flex justify-content-between align-self-center w-100">
+				<div class="col-3 name">nazwa</div>
+				<div class="col-3 browse">
+					<a href="browse.html"><button class="btn-browse">Przegladaj ogłoszenia</button></a>
+				</div>
+				<div class="col-3 search d-flex">
+					<input type="text" class="search-bar w-100 align-content-center" placeholder="Szukaj..." />
+				</div>
+				<div class="col-3 user d-flex">
+					user itp
+					<div class="user-icon d-flex justify-content-center align-items-center">a</div>
+					<div class="user-icon d-flex justify-content-center align-items-center">a</div>
 				</div>
 			</div>
 		</nav>
-
-		<div class="d-flex bg-info main-body-margins">
-			<!-- <div class="left-element">d</div> -->
-			<div class="d-flex bg-danger justify-content-center w-100 title">
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+		<div class="main-body bg-body-tertiary">
+			<div class="slider">a</div>
+			<div class="categories">
+				<ul class="main-categories">
+					<h3>Kategorie</h3>
+					<li><a href="#">lorem ipsum</a></li>
+					<li><a href="#">lorem ipsum</a></li>
+					<ul class="sub-categories">
+						<li><a href="#">lorem ipsum</a></li>
+						<li><a href="#">lorem ipsum</a></li>
+						<li><a href="#">lorem ipsum</a></li>
+						<li><a href="#">lorem ipsum</a></li>
+					</ul>
+					<li><a href="#">lorem ipsum</a></li>
+					<li><a href="#">lorem ipsum</a></li>
+				</ul>
 			</div>
+			<div class="filters">
+				<h3>Filtruj</h3>
+				<div class="filters-items">
+					<label><input type="checkbox" /> dsada</label>
+					<label><input type="checkbox" /> dsadasdsa</label>
+					<label><input type="checkbox" /> dsadasdsa</label>
+					<label><input type="checkbox" /> dsada</label>
+					<h4>Poziom zniszczenia</h4>
+					<label><input type="radio" name="filter-options" /> dsadasdsa</label>
+					<label><input type="radio" name="filter-options" /> dsadasdsa</label>
+				</div>
+			</div>
+			<div class="add-new-button">c</div>
 		</div>
 	</body>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

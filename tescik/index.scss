@@ -1,0 +1,23 @@
+@import '_test.scss';
+
+
+body{
+    .test {
+        background-color: $bgc;
+        @include test;  
+    }
+    .test2 {
+        background-color: $bgc2;
+        
+    }
+    .test3 {
+        background-color: $bgc3;
+    }
+    .test4 {
+        background-color: $bgc4;
+    }
+    .test5 {
+        background-color: $bgc5;
+
+    }
+}

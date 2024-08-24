@@ -1,0 +1,58 @@
+body .TEST {
+  display: flex;
+  justify-content: center;
+}
+
+body .TEST div {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+body .TEST #test {
+  background-color: #454545;
+}
+
+body .TEST #test2 {
+  background-color: #a94545;
+}
+
+body .TEST #test3 {
+  background-color: #ffa945;
+}
+
+body .TEST #test4 {
+  background-color: #a90000;
+}
+
+body .TEST #test5 {
+  background-color: #450000;
+}
+
+body .TEST #test6 {
+  background-color: black;
+}
+
+body .TEST #test7 {
+  background-color: #a96045;
+}
+
+body .TEST #test8 {
+  background-color: #4560a9;
+}
+
+body .TEST #test9 {
+  background-color: #4545a9;
+}
+
+body .TEST #test10 {
+  background-color: #60a945;
+}
+
+body .TEST #test11 {
+  background-color: #004545;
+}
+
+body .TEST #test12 {
+  background-color: #000045;
+}

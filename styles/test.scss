@@ -1,0 +1,62 @@
+body {
+    .TEST {
+        display: flex;
+        justify-content: center;
+        // flex-direction: column;
+    
+    div {
+        width: 100px;
+        height: 100px;
+        // background-color: red;
+        margin: 10px;
+    }
+    #test {
+        background-color: rgb(69, 69, 69)
+
+    }
+    #test2 {
+        background-color: rgb(169, 69, 69);
+
+    }
+    #test3 {
+        background-color: rgb(255, 169, 69);
+
+    }
+    #test4 {
+        background-color: rgb(169, 0, 0);
+
+    }
+    #test5 {
+        background-color: rgb(69, 0, 0);
+
+    }
+    #test6 {
+        background-color: rgb(0, 0, 0);
+
+    }
+    #test7 {
+        background-color: rgb(169, 96, 69);
+
+    }
+    #test8 {
+        background-color: rgb(69, 96, 169);
+
+    }
+    #test9 {
+        background-color: rgb(69, 69, 169);
+
+    }
+    #test10 {
+        background-color: rgb(96, 169, 69);
+
+    }
+    #test11 {
+        background-color: rgb(0, 69, 69);
+
+    }
+    #test12 {
+        background-color: rgb(0, 0, 69);
+
+    }
+
+}}

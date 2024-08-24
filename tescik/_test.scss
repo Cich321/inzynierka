@@ -1,0 +1,13 @@
+$bgc: red;
+$bgc2: blue;
+$bgc3: green;
+$bgc4: yellow;
+$bgc5: pink;
+
+
+@mixin test {
+    font-size: 42px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: green;
+}
