@@ -13,7 +13,9 @@ body {
     .offer-data {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        margin-top: 50px;
+        // justify-content: space-around;
+        width: 50%;
         .offer-title {
             font-size: 40px;
             font-weight: bold;
@@ -21,6 +23,36 @@ body {
         .offer-price {
             font-size: 20px;
             font-weight: bold;
+        }
+        .offer-top-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            .offer-price {
+                
+            }
+            .offer-location {
+                
+            }
+            .offer-phone {
+
+            }
+        }
+        .offer-bottom-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            .offer-availability {
+
+            }
+            .offer-views {
+
+            }
+            .offer-rating {
+
+            }
         }
     }
 }
@@ -36,8 +68,23 @@ body {
         width: 50%;
         background-color: red;
     }
-    .offer-description-img {
+    .offer-description-category {
         margin-left: 100px;
+        width: 50%;
+        background-color: darkblue;
+        .category-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            
+            background-color: wheat;
+            padding: 0;
+            li {
+                // margin-right: 100px;
+                background-color: green;
+                list-style: none;
+            }
+        }
     }
 }
 .comments {

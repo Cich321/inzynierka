@@ -1,0 +1,26 @@
+panel uzytkownika - imie nazwisko, oferty, zdjecie, opinie, wyloguj, telefon, mail, ilosc zakonczonych aukcji, portfolio edycja danych
+
+podglad konta jak sie kliknie na ikonke - imie nazwisko, oferty, zdjecie, opinie, wyloguj
+
+logowanie - mail, haslo (mozliwosc pokazania)
+
+ strona glowna - wyswietla sie normalnie, po kliknieciu zaloguj wyswietla sie modal do logowania, po zalogowaniu zmienia sie na navbarze ze jest sie zalogowanym - pokazuje sie imie
+
+
+
+
+mam
+
+przegladanie ofert
+nowa oferta - tytuł, kategoria, zdjecia (mozna zrobic kilka inputów i to jest max liczba zdjec), opis, lokalizacja, dane osoby, telefon (jezeli jest przypisany do konta to pobiera automatycznie) mozna dodac podglad
+oferta
+strona glowna
+rejestracja
+panel uzytkownika
+
+
+modale
+rejestracja
+login
+podglad konta jak sie kliknie na ikonke?
+

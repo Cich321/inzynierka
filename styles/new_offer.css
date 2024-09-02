@@ -80,12 +80,54 @@ form div button:hover {
   box-shadow: 4px 4px 13px -2px #9c9c9e;
 }
 
+form .categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form .categories .category-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 0;
+}
+
+form .categories .category-list li {
+  list-style: none;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4560a9;
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #4545a9;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 13px -2px #9c9c9e;
+  -moz-box-shadow: 4px 4px 13px -2px #9c9c9e;
+  box-shadow: 4px 4px 13px -2px #9c9c9e;
+}
+
 form #title-position {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
   flex-wrap: wrap;
+}
+
+form #title-position label {
+  margin-top: 10px;
 }
 
 form #price-position {

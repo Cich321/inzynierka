@@ -7,15 +7,41 @@ body {
 body .main-body {
   width: 400px;
   border: 1px solid #ccc;
-  height: 500px;
+  height: 600px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-body .main-body hr {
+body .main-body button {
   width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #f0f0f0;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+body .main-body button:hover {
+  background-color: #ccc;
+  -webkit-box-shadow: 4px 4px 8px -2px #9c9c9e;
+  -moz-box-shadow: 4px 4px 8px -2px #9c9c9e;
+  box-shadow: 4px 4px 8px -2px #9c9c9e;
+}
+
+body .main-body .user-content {
+  margin-top: auto;
+}
+
+body .main-body .user-status {
+  margin-top: auto;
 }
 
 body .main-body .user-manage {
@@ -44,14 +70,31 @@ body .main-body .user-info input[type=text] {
   margin-left: 10px;
 }
 
-body .main-body .user-content {
-  margin: 0;
-}
-
 body .main-body .logout {
   width: 100%;
   height: 50px;
   border: none;
   align-self: flex-end;
   margin-top: auto;
+  transition: 0.4s;
+  margin-bottom: 0 !important;
+}
+
+body .main-body .logout.clicked {
+  background-color: #ccc;
+  /* Example clicked state style */
+  box-shadow: none;
+  /* Disable box-shadow */
+}
+
+body .main-body .logout:hover {
+  -webkit-box-shadow: 4px 4px 8px -2px #9c9c9e;
+  -moz-box-shadow: 4px 4px 8px -2px #9c9c9e;
+  box-shadow: 4px 4px 8px -2px #9c9c9e;
+}
+
+body .main-body .logout:hover.clicked {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }

@@ -17,7 +17,8 @@ body {
 .image-with-data .offer-data {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin-top: 50px;
+  width: 50%;
 }
 
 .image-with-data .offer-data .offer-title {
@@ -28,6 +29,20 @@ body {
 .image-with-data .offer-data .offer-price {
   font-size: 20px;
   font-weight: bold;
+}
+
+.image-with-data .offer-data .offer-top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.image-with-data .offer-data .offer-bottom-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .offer-content {
@@ -43,8 +58,23 @@ body {
   background-color: red;
 }
 
-.offer-content .offer-description-img {
+.offer-content .offer-description-category {
   margin-left: 100px;
+  width: 50%;
+  background-color: darkblue;
+}
+
+.offer-content .offer-description-category .category-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: wheat;
+  padding: 0;
+}
+
+.offer-content .offer-description-category .category-list li {
+  background-color: green;
+  list-style: none;
 }
 
 .comments .comment {

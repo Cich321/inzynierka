@@ -1,3 +1,4 @@
+@import '_fonts.scss';
 body {
     margin: 0;
     padding: 0;
@@ -5,13 +6,33 @@ body {
     .main-body {
         width: 400px;
         border: 1px solid #ccc;
-        height: 500px;
+        height: 600px;
         padding: 10px;
         display: flex;
         flex-direction: column; 
         justify-content: space-between; 
-        hr {
+        button {
             width: 100%;
+            height: 50px;
+            border: none;
+            background-color: #f0f0f0;
+            @include body-font;
+            cursor: pointer;
+            transition: 0.4s;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            &:hover {
+                background-color: #ccc;
+                -webkit-box-shadow: 4px 4px 8px -2px rgba(156, 156, 158, 1);
+                -moz-box-shadow: 4px 4px 8px -2px rgba(156, 156, 158, 1);
+                box-shadow: 4px 4px 8px -2px rgba(156, 156, 158, 1);
+            }
+        }
+        .user-content {
+            margin-top: auto;
+        }
+        .user-status {
+            margin-top: auto;
         }
         .user-manage {
             width: 100%;
@@ -35,15 +56,29 @@ body {
                 margin-left: 10px;
             }
         }
-        .user-content {
-            margin: 0;
-        }
         .logout {
             width: 100%;
             height: 50px;
             border: none;
             align-self: flex-end;
             margin-top: auto;
+            // opacity: 0.6;
+            transition: 0.4s;
+            margin-bottom: 0 !important;
+            &.clicked {
+                background-color: #ccc; /* Example clicked state style */
+                box-shadow: none; /* Disable box-shadow */
+            }
+        }
+        .logout:hover {
+            -webkit-box-shadow: 4px 4px 8px -2px rgba(156, 156, 158, 1);
+            -moz-box-shadow: 4px 4px 8px -2px rgba(156, 156, 158, 1);
+            box-shadow: 4px 4px 8px -2px rgba(156, 156, 158, 1);
+            &.clicked {
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+            }
         }
     }
 }

@@ -17,12 +17,29 @@
 				</div>
 			</div>
 			<button class="user-manage">Moje konto</button>
-			<hr />
+			<!-- <hr /> -->
+
 			<div class="user-content">
 				<button>Twoje opinie</button>
 				<button>Twoje ogłoszenia</button>
+				<button>Obserwowane</button>
 			</div>
+			<div class="user-status">
+				<button>Aktywny</button>
+				<button>Niedostępny</button>
+			</div>
+
 			<button class="logout">Wyloguj</button>
 		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const logoutButton = document.querySelector(".logout");
+
+				logoutButton.addEventListener("click", function () {
+					this.classList.add("clicked");
+				});
+			});
+		</script>
 	</body>
 </html>

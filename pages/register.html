@@ -5,23 +5,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="/styles/register.css" />
 		<title>Rejestracja</title>
 	</head>
 	<body>
 		<nav class="nav-design d-flex">
 			<div class="margins d-flex justify-content-between align-self-center w-100">
-				<div class="col-3 name">nazwa</div>
-				<div class="col-3 browse">
-					<a href="browse.html"><button class="btn-browse">Przegladaj ogłoszenia</button></a>
-				</div>
+				<a href="#" class="col-3 name">
+					<span class="web-name">Przykładowa Nazwa</span>
+				</a>
+				<a href="browse.html" class="col-3 browse">
+					<span class="btn-browse">Przegladaj ogłoszenia</span>
+				</a>
 				<div class="col-3 search d-flex">
-					<input type="text" class="search-bar w-100 align-content-center" placeholder="Szukaj..." />
+					<!-- <input type="text" class="search-bar w-100 align-content-center" placeholder="Szukaj..." /> -->
 				</div>
 				<div class="col-3 user d-flex">
-					user itp
-					<div class="user-icon d-flex justify-content-center align-items-center">a</div>
-					<div class="user-icon d-flex justify-content-center align-items-center">a</div>
+					<!-- user itp -->
+					<!-- <div class="user-icon d-flex justify-content-center align-items-center">a</div> -->
+					<input type="text" class="search-bar w-100 align-content-center" placeholder="Szukaj..." />
+					<div class="user-icon d-flex justify-content-center align-items-center">
+						<button class="user-button">
+							<img src="https://via.placeholder.com/50" alt="" />
+						</button>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -29,19 +39,23 @@
 			<h1>Zarejestruj się</h1>
 			<label for="first-name"
 				><span>Imię</span>
-				<input type="text" id="first-name" />
+				<input type="text" id="first-name" placeholder="Jakub" />
 			</label>
 			<label for="last-name"
 				><span>Nazwisko</span>
-				<input type="text" id="last-name" />
+				<input type="text" id="last-name" placeholder="Cichocki" />
 			</label>
 			<label for="email"
 				><span>E-mail</span>
-				<input type="email" id="email" />
+				<input type="email" id="email" placeholder="11910@puz.wloclawek.pl" />
 			</label>
 			<label for="password"
 				><span>Hasło</span>
-				<input type="password" id="password" />
+				<input type="password" id="password" placeholder="Podaj hasło" />
+			</label>
+			<label for="password"
+				><span>Potwierdz hasło</span>
+				<input type="password" id="password" placeholder="Powtórz hasło" />
 			</label>
 			<button>Prześlij</button>
 		</form>
