@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 		<link rel="stylesheet" href="/styles/offer.css" />
 		<title>NAZWA OFERTY</title>
 	</head>
@@ -10,18 +11,55 @@
 		<div class="image-with-data">
 			<div class="image">
 				<img src="https://via.placeholder.com/500" alt="placeholder" />
+				<div class="slider-nav">
+					<button class="image-circle"></button>
+					<button class="image-circle"></button>
+					<button class="image-circle"></button>
+					<button class="image-circle"></button>
+					<button class="image-circle"></button>
+				</div>
 			</div>
 			<div class="offer-data">
-				<span class="offer-title">offer-title</span>
-				<div class="offer-top-info">
-					<span class="offer-price"> Price: </span>
-					<span class="offer-location">offer-location</span>
-					<span class="offer-phone">phone number</span>
+				<div class="top-centered">
+					<div class="title">
+						<span class="offer-title">Naprawa rekojesci oraz wytwarzenie nowych.</span>
+						<div class="offer-author">
+							<span>Wystawiający: </span>
+							<span>Jakub Cichocki</span>
+						</div>
+					</div>
+					<div class="price">
+						<div class="offer-price">
+							<span>Cena: </span>
+							<span>400 zl</span>
+						</div>
+						<div class="offer-rating">
+							<span>Ocena: </span>
+							<span>5/5</span>
+						</div>
+					</div>
 				</div>
-				<div class="offer-bottom-info">
-					<span class="offer-availability">offer-availability.</span>
-					<span class="offer-views">offer-views</span>
-					<span class="offer-rating">offer-rating.</span>
+				<div class="middle-content">
+					<div class="offer-location">
+						<span>Lokalizacja: </span>
+						<span>wloclawek</span>
+					</div>
+					<div class="offer-phone">
+						<span>Numer telefonu: </span>
+						<span>123456789</span>
+					</div>
+					<div class="offer-avaliability">
+						<div>
+							<span>Godziny kontaktowe: </span>
+							<span>12:00-20:00</span>
+						</div>
+						<button type="button">Pokaż wiecej</button>
+					</div>
+				</div>
+
+				<div class="offer-views">
+					<span>Wyświetlenia: </span>
+					<span>321</span>
 				</div>
 			</div>
 		</div>
@@ -30,22 +68,71 @@
 			<div class="offer-description-category">
 				<!-- <img src="https://via.placeholder.com/350" alt="" /> -->
 				<ul class="category-list">
-					<li>Ostrzenie</li>
-					<li>Ostrzenie</li>
-					<li>Ostrzenie</li>
-					<li>Ostrzenie</li>
-					<li>Ostrzenie</li>
-					<li>Ostrzenie</li>
-					<li>Ostrzenie</li>
-					<li>Ostrzenie</li>
-					<li>Ostrzenie</li>
-					<li>Ostrzenie</li>
-					<li>Ostrzenie</li>
-					<li>Ostrzenie</li>
+					<button>
+						<div class="category-icon">
+							<i class="fa-regular fa-bookmark"></i>
+							<li>Ostrzenie</li>
+						</div>
+					</button>
+					<button>
+						<div class="category-icon">
+							<i class="fa-regular fa-bookmark"></i>
+							<li>Ostrzenie</li>
+						</div>
+					</button>
+					<button>
+						<div class="category-icon">
+							<i class="fa-regular fa-bookmark"></i>
+							<li>Ostrzenie</li>
+						</div>
+					</button>
+					<button>
+						<div class="category-icon">
+							<i class="fa-regular fa-bookmark"></i>
+							<li>Ostrzenie</li>
+						</div>
+					</button>
+					<button>
+						<div class="category-icon">
+							<i class="fa-regular fa-bookmark"></i>
+							<li>Ostrzenie</li>
+						</div>
+					</button>
+					<button>
+						<div class="category-icon">
+							<i class="fa-regular fa-bookmark"></i>
+							<li>Ostrzenie</li>
+						</div>
+					</button>
+					<button>
+						<div class="category-icon">
+							<i class="fa-regular fa-bookmark"></i>
+							<li>Ostrzenie</li>
+						</div>
+					</button>
+					<button>
+						<div class="category-icon">
+							<i class="fa-regular fa-bookmark"></i>
+							<li>Ostrzenie</li>
+						</div>
+					</button>
 				</ul>
 			</div>
 		</div>
+		<br />
 		<div class="comments">
+			<div class="new-comment">
+				<textarea name="new-comment" id="new-comment" maxlength="1000" placeholder="Podziel się swoją opinią temat jakości świadczonej usługi"></textarea>
+				<div>
+					<button>Opublikuj</button>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+			</div>
+
 			<div class="comment">
 				<div class="comment-author">
 					<div class="author-data">
@@ -63,8 +150,29 @@
 					</div>
 				</div>
 			</div>
-			<div class="comment"></div>
-			<div class="comment"></div>
+			<div class="comment">
+				<div class="comment-author">
+					<div class="author-data">
+						<img src="https://via.placeholder.com/50" alt="" />
+						<div class="author-name">Jakub Cichocki</div>
+					</div>
+					<div class="author-rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero sunt doloribus earum quaerat iusto quasi sint explicabo exercitationem placeat aspernatur.</p>
+					</div>
+					<div class="comment-date">
+						<p>23.05.2024</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

@@ -11,52 +11,106 @@
 	<body>
 		<nav class="nav-design d-flex">
 			<div class="margins d-flex justify-content-between align-self-center w-100">
-				<div class="col-3 name">nazwa</div>
-				<div class="col-3 browse">
-					<a href="browse.html"><button class="btn-browse">Przegladaj ogłoszenia</button></a>
-				</div>
+				<a href="#" class="col-3 name">
+					<span>Broń Przeszłości</span>
+				</a>
+				<a href="browse.html" class="col-3 browse">
+					<span class="btn-browse">Przegladaj ogłoszenia</span>
+				</a>
 				<div class="col-3 search d-flex">
-					<input type="text" class="search-bar w-100 align-content-center" placeholder="Szukaj..." />
+					<!-- <input type="text" class="search-bar w-100 align-content-center" placeholder="Szukaj..." /> -->
 				</div>
 				<div class="col-3 user d-flex">
-					user itp
-					<div class="user-icon d-flex justify-content-center align-items-center">a</div>
-					<div class="user-icon d-flex justify-content-center align-items-center">a</div>
+					<!-- user itp -->
+					<!-- <div class="user-icon d-flex justify-content-center align-items-center">a</div> -->
+					<input type="text" class="search-bar w-100 align-content-center" placeholder="Szukaj..." />
+					<div class="user-icon d-flex justify-content-center align-items-center">
+						<button class="user-button">
+							<img src="https://via.placeholder.com/50" alt="" />
+						</button>
+					</div>
 				</div>
 			</div>
 		</nav>
-		<div class="main-body bg-body-tertiary">
-			<div class="slider">a</div>
-			<div class="categories">
-				<ul class="main-categories">
-					<h3>Kategorie</h3>
-					<li><a href="#">lorem ipsum</a></li>
-					<li><a href="#">lorem ipsum</a></li>
-					<ul class="sub-categories">
+		<div class="main-body">
+			<div class="slider">
+				<div class="slider-main">
+					<div class="slider-body">
+						<div class="slider-title">Jakub Cichocki</div>
+						<div class="slider-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque autem architecto illum maxime maiores, natus voluptatibus ut, earum ipsum perferendis iusto repudiandae deleniti inventore commodi beatae excepturi? Iste, quidem nemo labore perferendis esse vitae in expedita at? Perferendis, recusandae repudiandae?</div>
+					</div>
+					<div class="slider-nav">
+						<button type="button"></button>
+						<button type="button"></button>
+						<button type="button"></button>
+						<button type="button"></button>
+						<button type="button"></button>
+						<button type="button"></button>
+					</div>
+				</div>
+				<div class="slider-img">
+					<img src="https://dummyimage.com/400x250/000/fff" alt="placeholder" />
+				</div>
+			</div>
+			<div class="page-content">
+				<!-- <div class="categories">
+					<ul class="main-categories">
+						<h3>Kategorie</h3>
 						<li><a href="#">lorem ipsum</a></li>
 						<li><a href="#">lorem ipsum</a></li>
+						<ul class="sub-categories">
+							<li><a href="#">lorem ipsum</a></li>
+							<li><a href="#">lorem ipsum</a></li>
+							<li><a href="#">lorem ipsum</a></li>
+							<li><a href="#">lorem ipsum</a></li>
+						</ul>
 						<li><a href="#">lorem ipsum</a></li>
 						<li><a href="#">lorem ipsum</a></li>
 					</ul>
-					<li><a href="#">lorem ipsum</a></li>
-					<li><a href="#">lorem ipsum</a></li>
-				</ul>
+					<div class="filters-items">
+						<h3>Filtruj</h3>
+						<label><input type="checkbox" /> cena</label>
+						<label><input type="checkbox" /> lokalizacja</label>
+						<label><input type="checkbox" /> opinie</label>
+						<label><input type="checkbox" /> dsada</label>
+						<h4>Poziom zniszczenia</h4>
+						<label><input type="radio" name="filter-options" /> dsadasdsa</label>
+						<label><input type="radio" name="filter-options" /> dsadasdsa</label>
+					</div> -->
+				<!-- </div> -->
+				<p>
+					Restauracja to nie tylko kwestia ochrony przed zniszczeniem – to także osobista misja. Wykonanie takiej pracy wymaga dużego zaangażowania, aby przywrócić autentyczny wygląd i zabezpieczyć broń przed dalszym niszczeniem. Proces ten nie tylko chroni materialny aspekt broni, ale także symbolizuje troskę o historię, wartości i pamięć, które z nią się wiążą. <br />
+					Dla wielu osób to forma szacunku wobec przeszłości oraz dbałość o własne korzenie i tożsamość rodzinną. Ma on szczególne znaczenie, ponieważ daje możliwość zachowania unikalnych, często rodzinnych lub osobistych pamiątek dla przyszłych pokoleń. Broń, którą posiadamy, może mieć głęboką wartość sentymentalną, będąc dziedzictwem przekazywanym z pokolenia na pokolenie, świadectwem losów przodków, którzy mogli brać udział w ważnych wydarzeniach historycznych.
+				</p>
 			</div>
-			<div class="filters">
-				<h3>Filtruj</h3>
-				<div class="filters-items">
-					<label><input type="checkbox" /> dsada</label>
-					<label><input type="checkbox" /> dsadasdsa</label>
-					<label><input type="checkbox" /> dsadasdsa</label>
-					<label><input type="checkbox" /> dsada</label>
-					<h4>Poziom zniszczenia</h4>
-					<label><input type="radio" name="filter-options" /> dsadasdsa</label>
-					<label><input type="radio" name="filter-options" /> dsadasdsa</label>
+			<div class="add-new-button">
+				<i class="fa-solid fa-plus"></i>
+				Dodaj
+			</div>
+			<h2>Popularne kategorie</h2>
+			<div class="popular-categories">
+				<div class="popular-category-content">
+					<span>Nazwa kategorii</span>
+					<img src="https://via.placeholder.com/250" alt="placeholder" />
+				</div>
+				<div class="popular-category-content">
+					<span>Nazwa kategorii</span>
+					<img src="https://via.placeholder.com/250" alt="placeholder" />
+				</div>
+				<div class="popular-category-content">
+					<span>Nazwa kategorii</span>
+					<img src="https://via.placeholder.com/250" alt="placeholder" />
+				</div>
+				<div class="popular-category-content">
+					<span>Nazwa kategorii</span>
+					<img src="https://via.placeholder.com/250" alt="placeholder" />
+				</div>
+				<div class="popular-category-content">
+					<span>Nazwa kategorii</span>
+					<img src="https://via.placeholder.com/250" alt="placeholder" />
 				</div>
 			</div>
-			<div class="add-new-button">c</div>
 		</div>
 	</body>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
-<!-- ps-5 ps-lg-5 ps-sm-5 pe-5 pe-lg-5 pe-sm-5 -->

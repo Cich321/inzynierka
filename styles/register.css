@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #f9faff;
 }
 
 body .nav-design {
-  background-color: darkred;
+  background-color: #34495E;
   height: 100px;
 }
 
@@ -24,10 +24,8 @@ body .nav-design .margins .user {
 }
 
 body .nav-design .margins .user .user-icon {
-  border: 1px solid red;
   border-radius: 50%;
   width: 50px;
-  height: 50px;
   margin-left: 33px;
 }
 
@@ -65,9 +63,7 @@ body .nav-design .margins .user .search-bar:focus {
 
 body .nav-design .margins .browse {
   align-content: center;
-  padding-left: 25px;
   padding-right: 25px;
-  height: 50px;
   text-decoration: none;
 }
 
@@ -79,30 +75,39 @@ body .nav-design .margins .browse .btn-browse {
   color: black;
   font-weight: 600;
   padding: 5px;
-  background-color: #4560a9;
+  background-color: #7D8EA0;
+  color: white;
   border: none;
   border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+body .nav-design .margins .browse .btn-browse:hover {
+  -webkit-box-shadow: 4px 4px 13px -2px #55606d;
+  -moz-box-shadow: 4px 4px 13px -2px #55606d;
+  box-shadow: 4px 4px 13px -2px #55606d;
+  background-color: #5b6c80;
 }
 
 body .nav-design .margins .name {
   text-decoration: none;
   padding-left: 25px;
   padding-right: 25px;
-  background-color: #fff;
   border-radius: 10px;
   height: inherit;
   display: flex;
   align-items: center;
-}
-
-body .nav-design .margins .name .web-name {
   font-size: 30px;
   font-family: "Nunito", sans-serif;
   color: black;
   font-weight: 600;
+  font-size: 38px;
+  color: white;
 }
 
 body form {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,16 +159,15 @@ body form button {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #4560a9;
+  background-color: #7D8EA0;
   color: white;
   font-size: 16px;
   margin-top: 10px;
 }
 
 body form button:hover {
-  background-color: #4545a9;
-  cursor: pointer;
-  -webkit-box-shadow: 4px 4px 13px -2px #9c9c9e;
-  -moz-box-shadow: 4px 4px 13px -2px #9c9c9e;
-  box-shadow: 4px 4px 13px -2px #9c9c9e;
+  -webkit-box-shadow: 4px 4px 13px -2px #55606d;
+  -moz-box-shadow: 4px 4px 13px -2px #55606d;
+  box-shadow: 4px 4px 13px -2px #55606d;
+  background-color: #5b6c80;
 }

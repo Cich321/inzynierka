@@ -1,34 +1,26 @@
 @import '_fonts.scss';
+@import '_buttons.scss';
+@import '_colors.scss';
 body {
     margin: 0;
     padding: 0;
     // background-color: #f1f1f1;
-    background-color: rgb(255, 255, 255);
+    background-color: $bgc-body;
     .nav-design {
-        // background-color: rgb(9, 25, 75);
-        background-color: darkred;
-        //  #f1f1f1;
+        background-color: #34495E;
         height: 100px;       
-        // margin-left: 237px;
         .margins {
             margin-left: 237px;
             margin-right: 237px;
             .search {
                 padding-left: 25px;
                 padding-right: 25px;
-                // margin-left: 50px;
-
             }
             .user {
-                // padding-left: 25px;
-                // padding-right: 25px;
                 justify-content: flex-end;
-                // border: 5px solid black;
                 .user-icon {
-                    border: 1px solid red;
                     border-radius: 50%;
                     width: 50px;
-                    height: 50px;
                     margin-left: 33px;
                     .user-button {
                         border: none;
@@ -59,19 +51,22 @@ body {
             }
             .browse {
                 align-content: center;
-                padding-left: 25px;
                 padding-right: 25px;
-                height: 50px;
                 text-decoration: none;
-                // display: flex;
                 .btn-browse {
                     height: 50px;
                     display: flex;
                     @include title-font;
                     padding: 5px;
-                    background-color: rgb(69, 96, 169);
+                    background-color: $btn-color;
+                    color: white;
                     border: none;
                     border-radius: 10px;
+                    text-align: center;
+                    justify-content: center;
+                    &:hover {
+                        @include hover;
+                    }
                     
                 }  
             }
@@ -80,18 +75,18 @@ body {
                 text-decoration: none;
                 padding-left: 25px;
                 padding-right: 25px;
-                background-color: #fff;
                 border-radius: 10px;
                 height: inherit;
                 display: flex;
                 align-items: center;
-                .web-name {                    
-                   @include title-font;
-                }
+                @include title-font;
+                font-size: 38px;
+                color: white;
             }
         }
     }
 form {
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,23 +129,11 @@ form {
         }
     }
     button {
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        background-color: rgb(69, 96, 169);
-        color: white;
-        font-size: 16px;
-        margin-top: 10px;
+        @include submit-button;
     }
     
     button:hover {
-        background-color: rgb(69, 69, 169);
-        cursor: pointer;
-        -webkit-box-shadow: 4px 4px 13px -2px rgba(156, 156, 158, 1);
-        -moz-box-shadow: 4px 4px 13px -2px rgba(156, 156, 158, 1);
-        box-shadow: 4px 4px 13px -2px rgba(156, 156, 158, 1);
-    }
-
-
+       @include hover;
+    }   
         
 }}

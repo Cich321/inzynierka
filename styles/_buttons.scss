@@ -2,16 +2,15 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(69, 96, 169);
+    background-color: $btn-color;
     color: white;
     font-size: 16px;
     margin-top: 10px;
 }
 
 @mixin hover {
-    background-color: rgb(69, 69, 169);
-    cursor: pointer;
-    -webkit-box-shadow: 4px 4px 13px -2px rgba(156, 156, 158, 1);
-    -moz-box-shadow: 4px 4px 13px -2px rgba(156, 156, 158, 1);
-    box-shadow: 4px 4px 13px -2px rgba(156, 156, 158, 1);
+    -webkit-box-shadow: 4px 4px 13px -2px rgb(85, 96, 109);
+    -moz-box-shadow: 4px 4px 13px -2px rgb(85, 96, 109);
+    box-shadow: 4px 4px 13px -2px rgb(85, 96, 109);
+    background-color: rgb(91, 108, 128);
 }

@@ -1,5 +1,16 @@
+@import '_fonts.scss';
 @import '_buttons.scss';
+@import '_colors.scss';
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*{
+    @include body-font;
+}
 form {
+    background-color: $bgc-body;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +31,7 @@ form {
         flex-direction: column;
         align-items: center;
         input[type=text], input[type=number] {
-            flex: 2; /* Allow the input to take up more space */
+            // flex: 2; /* Allow the input to take up more space */
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -44,40 +55,42 @@ form {
         span {
             margin-bottom: 5px;
         }
-        textarea {
-            resize: none;
-            height: 300px;
-            width: 600px;
-            padding: 12px 20px;
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            // background-color: #f8f8f8;
-            font-size: 16px;
-            margin-bottom: 40px;
-
-          }
     }
     button {
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        background-color: #007bff;
-        color: white;
-        font-size: 16px;
-        margin-top: 10px;
-    }
-    
-    button:hover {
-        background-color: #0065d1;
-        cursor: pointer;
-        -webkit-box-shadow: 4px 4px 13px -2px rgba(156, 156, 158, 1);
-        -moz-box-shadow: 4px 4px 13px -2px rgba(156, 156, 158, 1);
-        box-shadow: 4px 4px 13px -2px rgba(156, 156, 158, 1);
+        @include submit-button;
+        &:hover {
+            @include hover;
+        }
     }
     
 
 }
+.offer-info {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    .title {
+        width: 100%;
+        input {
+            width: 100%;
+        }
+    }
+    .other-informations {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        button {
+            @include submit-button;
+            &:hover {
+                @include hover;
+            }
+        }
+    }
+    label {
+        margin-top: 10px
+    }
+}
+
 .categories {
     display: flex;
     flex-direction: column;
@@ -88,51 +101,50 @@ form {
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
         width: 100%;
-        border: 1px solid black;
-        // background-color: wheat;
         padding: 0;
         li {
-            // margin-right: 100px;
-            // background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
             list-style: none;
+            input[type=checkbox] {
+                margin-right: 10px;
+                height: 25px;
+                width: 25px;
+            }
         }
     }
 }
 button {
    @include submit-button;
-}
-
-button:hover {
-    @include hover;
-}
-@mixin space-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#title-position {
-    // background-color: red;
-    @include space-between;
-    margin: 20px 0;
-    flex-wrap: wrap;
-    label {
-        margin-top: 10px
+    &:hover {
+        @include hover;
     }
 }
-#price-position {
-    // background-color: red;
-    @include space-between;
-    margin: 20px 0;
-}
-#desc-position {
+
+
+.desc-position {
     // background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
-
-    #images {
+    textarea {
+        border:1px solid black;
+        resize: none;
+        height: 300px;
+        width: 600px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        // background-color: #f8f8f8;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .images {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -160,4 +172,44 @@ button:hover {
         }
     }
 }
+}
+.hours-table {
+    // border: 1px solid black;
+    padding: 0;
+    margin: 0;
+    th {
+        border: 1px solid black;
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        &:empty:hover {
+            cursor: pointer;
+            background-color: #bfe664;
+        }
+    }
+}
+.modal-body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.modal-footer {
+    .modal-button {
+        @include submit-button;
+        &:hover {
+            @include hover;
+        }
+    }
+    .modal-button-save {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4e739b;
+        color: white;
+        font-size: 16px;
+        margin-top: 10px;
+        &:hover {
+            background-color: #396b97;
+        }
+    }
 }

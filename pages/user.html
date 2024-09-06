@@ -14,53 +14,71 @@
 				<img src="https://via.placeholder.com/100" alt="" />
 			</div>
 			<div class="user-name">
-				<input type="text" />
+				<input type="text" value="Jakub Cichocki" disabled />
 			</div>
 			<div class="user-phone">
-				<input type="text" />
+				<input type="text" value="123456789" disabled />
 			</div>
 			<div class="user-mail">
-				<input type="email" />
+				<input type="email" value="11910@puz.wloclawek.pl" disabled />
 			</div>
-			<div class="user-btn">wyloguj</div>
-
+			<div class="user-btn">
+				<button>Wyloguj</button>
+			</div>
 			<div class="user-auctions-finised">
-				<input type="text" />
+				<input type="text" value="124" disabled />
 			</div>
 			<div class="user-reviews">
-				<input type="text" />
+				<input type="text" value="4.6/5" disabled />
 			</div>
-			<div class="user-btn">opcje</div>
+			<div class="user-btn">
+				<button>Opcje</button>
+			</div>
 		</section>
 		<section class="description">
 			<div class="user-description">
 				<textarea name="description" id="" maxlength="2000"></textarea>
 				<div class="description-options">
-					<!-- ikony dodac -->
-					<button>bold</button>
-					<button>italic</button>
-					<button>underline</button>
-					<button>lista</button>
-					<button>naglowki</button>
+					<button><i class="fa-solid fa-bold"></i></button>
+					<button><i class="fa-solid fa-italic"></i></button>
+					<button><i class="fa-solid fa-underline"></i></button>
+					<button><i class="fa-solid fa-list"></i></button>
+					<select name="headers" id="headers">
+						<option value="header1" id="header1">Nagłówek 1</option>
+						<option value="header2" id="header2">Nagłówek 2</option>
+						<option value="header3" id="header3">Nagłówek 3</option>
+					</select>
 				</div>
 			</div>
 		</section>
-		<div class="user-offers">
+		<div class="user-offer">
 			<div class="user-offer-img">
 				<img src="https://via.placeholder.com/100" alt="" />
 			</div>
 			<div class="user-offer-description">
-				<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, deserunt?</span>
+				<span>Tytuł oferty która jest wystawiona</span>
 				<span>price</span>
 				<span>ilosc odwiedzonych</span>
 			</div>
 			<div class="user-offer-options">
-				<button>usun</button>
-				<!--ikonki -->
-				<button>edytuj</button>
-				<!--ikonki -->
-				<button>ukryj</button>
-				<!--ikonki -->
+				<button><i class="fa-solid fa-trash-can"></i></button>
+				<button><i class="fa-solid fa-pen-to-square"></i></button>
+				<button class="hide"><i class="fa-solid fa-eye-slash"></i></button>
+			</div>
+		</div>
+		<div class="user-offer">
+			<div class="user-offer-img">
+				<img src="https://via.placeholder.com/100" alt="" />
+			</div>
+			<div class="user-offer-description">
+				<span>Tytuł oferty która jest wystawiona</span>
+				<span>price</span>
+				<span>ilosc odwiedzonych</span>
+			</div>
+			<div class="user-offer-options">
+				<button><i class="fa-solid fa-trash-can"></i></button>
+				<button><i class="fa-solid fa-pen-to-square"></i></button>
+				<button class="hide"><i class="fa-solid fa-eye-slash"></i></button>
 			</div>
 		</div>
 	</body>
